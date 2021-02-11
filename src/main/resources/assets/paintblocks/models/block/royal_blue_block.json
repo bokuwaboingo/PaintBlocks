@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "paintblocks:blocks/royal_blue_block"
+	}
+}

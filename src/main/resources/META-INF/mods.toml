@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[35,)"
+license="All rights reserved"
+[[mods]]
+modId="paintblocks"
+version="1.0.0"
+displayName="Paint Blocks"
+credits="Credit to TurtyWurty for the tutorials"
+authors="Justin Pridgen (BokuWaBoingo)"
+description="Paint Blocks for your builds. (Based on CSS Keywords)"
