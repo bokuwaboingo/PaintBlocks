@@ -1,7 +1,7 @@
 package com.bokuwaboingo.paintblocks.init;
 
 import com.bokuwaboingo.paintblocks.PaintBlocks;
-import com.bokuwaboingo.paintblocks.items.PaintBlockItem;
+import com.bokuwaboingo.paintblocks.items.*;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -10,6 +10,8 @@ import net.minecraftforge.registries.*;
 public class ItemInit
 {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, PaintBlocks.MOD_ID);
+	
+	public static final RegistryObject<RainbowBlockItem> RAINBOW_BLOCK = ITEMS.register("rainbow_block", () -> new RainbowBlockItem(BlockInit.RAINBOW_BLOCK.get()));
 	
 	public static final RegistryObject<PaintBlockItem> ALICE_BLUE_BLOCK = ITEMS.register("alice_blue_block", () -> new PaintBlockItem(BlockInit.ALICE_BLUE_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> ANTIQUE_WHITE_BLOCK = ITEMS.register("antique_white_block", () -> new PaintBlockItem(BlockInit.ANTIQUE_WHITE_BLOCK.get()));
@@ -22,7 +24,7 @@ public class ItemInit
 	public static final RegistryObject<PaintBlockItem> BLUE_BLOCK = ITEMS.register("blue_block", () -> new PaintBlockItem(BlockInit.BLUE_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> BLUE_VIOLET_BLOCK = ITEMS.register("blue_violet_block", () -> new PaintBlockItem(BlockInit.BLUE_VIOLET_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> BROWN_BLOCK = ITEMS.register("brown_block", () -> new PaintBlockItem(BlockInit.BROWN_BLOCK.get()));
-	public static final RegistryObject<PaintBlockItem> BURLY_WOOD_BLOCK = ITEMS.register("burly_wood_block", () -> new PaintBlockItem(BlockInit.BURLY_WOOD_BLOCK.get()));
+	public static final RegistryObject<PaintBlockItem> BURLYWOOD_BLOCK = ITEMS.register("burlywood_block", () -> new PaintBlockItem(BlockInit.BURLYWOOD_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> CADET_BLUE_BLOCK = ITEMS.register("cadet_blue_block", () -> new PaintBlockItem(BlockInit.CADET_BLUE_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> CHARTREUSE_BLOCK = ITEMS.register("chartreuse_block", () -> new PaintBlockItem(BlockInit.CHARTREUSE_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> CHOCOLATE_BLOCK = ITEMS.register("chocolate_block", () -> new PaintBlockItem(BlockInit.CHOCOLATE_BLOCK.get())); 
@@ -44,8 +46,8 @@ public class ItemInit
 	public static final RegistryObject<PaintBlockItem> DARK_RED_BLOCK = ITEMS.register("dark_red_block", () -> new PaintBlockItem(BlockInit.DARK_RED_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> DARK_SALMON_BLOCK = ITEMS.register("dark_salmon_block", () -> new PaintBlockItem(BlockInit.DARK_SALMON_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> DARK_SEAGREEN_BLOCK = ITEMS.register("dark_seagreen_block", () -> new PaintBlockItem(BlockInit.DARK_SEAGREEN_BLOCK.get()));
-	public static final RegistryObject<PaintBlockItem> DARK_SLATEBLUE_BLOCK = ITEMS.register("dark_slateblue_block", () -> new PaintBlockItem(BlockInit.DARK_SLATEBLUE_BLOCK.get()));
-	public static final RegistryObject<PaintBlockItem> DARK_SLATEGRAY_BLOCK = ITEMS.register("dark_slategray_block", () -> new PaintBlockItem(BlockInit.DARK_SLATEGRAY_BLOCK.get()));
+	public static final RegistryObject<PaintBlockItem> DARK_SLATE_BLUE_BLOCK = ITEMS.register("dark_slate_blue_block", () -> new PaintBlockItem(BlockInit.DARK_SLATE_BLUE_BLOCK.get()));
+	public static final RegistryObject<PaintBlockItem> DARK_SLATE_GRAY_BLOCK = ITEMS.register("dark_slate_gray_block", () -> new PaintBlockItem(BlockInit.DARK_SLATE_GRAY_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> DARK_TURQUOISE_BLOCK = ITEMS.register("dark_turquoise_block", () -> new PaintBlockItem(BlockInit.DARK_TURQUOISE_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> DARK_VIOLET_BLOCK = ITEMS.register("dark_violet_block", () -> new PaintBlockItem(BlockInit.DARK_VIOLET_BLOCK.get()));
 	public static final RegistryObject<PaintBlockItem> DEEP_PINK_BLOCK = ITEMS.register("deep_pink_block", () -> new PaintBlockItem(BlockInit.DEEP_PINK_BLOCK.get())); 

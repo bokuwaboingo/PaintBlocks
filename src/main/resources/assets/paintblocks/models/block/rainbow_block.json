@@ -1,0 +1,8 @@
+{
+	"parent": "block/cube_bottom_top",
+	"textures": {
+		"top": "paintblocks:blocks/red_block",
+		"side": "paintblocks:blocks/rainbow_block",
+		"bottom": "paintblocks:blocks/purple_block"
+	}
+}

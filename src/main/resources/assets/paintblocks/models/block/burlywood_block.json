@@ -1,6 +1,6 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "paintblocks:blocks/burly_wood_block"
+		"all": "paintblocks:blocks/burlywood_block"
 	}
 }

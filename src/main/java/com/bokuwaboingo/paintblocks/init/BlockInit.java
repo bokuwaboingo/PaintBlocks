@@ -1,7 +1,7 @@
 package com.bokuwaboingo.paintblocks.init;
 
 import com.bokuwaboingo.paintblocks.PaintBlocks;
-import com.bokuwaboingo.paintblocks.blocks.PaintBlock;
+import com.bokuwaboingo.paintblocks.blocks.*;
 
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.RegistryObject;
@@ -10,6 +10,8 @@ import net.minecraftforge.registries.*;
 public class BlockInit
 {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, PaintBlocks.MOD_ID);
+	
+	public static final RegistryObject<RainbowBlock> RAINBOW_BLOCK = BLOCKS.register("rainbow_block", () -> new RainbowBlock());
 	
 	public static final RegistryObject<PaintBlock> ALICE_BLUE_BLOCK = BLOCKS.register("alice_blue_block", () -> new PaintBlock());
 	public static final RegistryObject<PaintBlock> ANTIQUE_WHITE_BLOCK = BLOCKS.register("antique_white_block", () -> new PaintBlock());    
@@ -22,7 +24,7 @@ public class BlockInit
 	public static final RegistryObject<PaintBlock> BLUE_BLOCK = BLOCKS.register("blue_block", () -> new PaintBlock());
 	public static final RegistryObject<PaintBlock> BLUE_VIOLET_BLOCK = BLOCKS.register("blue_violet_block", () -> new PaintBlock());        
 	public static final RegistryObject<PaintBlock> BROWN_BLOCK = BLOCKS.register("brown_block", () -> new PaintBlock());
-	public static final RegistryObject<PaintBlock> BURLY_WOOD_BLOCK = BLOCKS.register("burly_wood_block", () -> new PaintBlock());
+	public static final RegistryObject<PaintBlock> BURLYWOOD_BLOCK = BLOCKS.register("burlywood_block", () -> new PaintBlock());
 	public static final RegistryObject<PaintBlock> CADET_BLUE_BLOCK = BLOCKS.register("cadet_blue_block", () -> new PaintBlock());
 	public static final RegistryObject<PaintBlock> CHARTREUSE_BLOCK = BLOCKS.register("chartreuse_block", () -> new PaintBlock());
 	public static final RegistryObject<PaintBlock> CHOCOLATE_BLOCK = BLOCKS.register("chocolate_block", () -> new PaintBlock());
@@ -44,8 +46,8 @@ public class BlockInit
 	public static final RegistryObject<PaintBlock> DARK_RED_BLOCK = BLOCKS.register("dark_red_block", () -> new PaintBlock());
 	public static final RegistryObject<PaintBlock> DARK_SALMON_BLOCK = BLOCKS.register("dark_salmon_block", () -> new PaintBlock());
 	public static final RegistryObject<PaintBlock> DARK_SEAGREEN_BLOCK = BLOCKS.register("dark_seagreen_block", () -> new PaintBlock());      
-	public static final RegistryObject<PaintBlock> DARK_SLATEBLUE_BLOCK = BLOCKS.register("dark_slateblue_block", () -> new PaintBlock());    
-	public static final RegistryObject<PaintBlock> DARK_SLATEGRAY_BLOCK = BLOCKS.register("dark_slategray_block", () -> new PaintBlock());    
+	public static final RegistryObject<PaintBlock> DARK_SLATE_BLUE_BLOCK = BLOCKS.register("dark_slate_blue_block", () -> new PaintBlock());    
+	public static final RegistryObject<PaintBlock> DARK_SLATE_GRAY_BLOCK = BLOCKS.register("dark_slate_gray_block", () -> new PaintBlock());    
 	public static final RegistryObject<PaintBlock> DARK_TURQUOISE_BLOCK = BLOCKS.register("dark_turquoise_block", () -> new PaintBlock());    
 	public static final RegistryObject<PaintBlock> DARK_VIOLET_BLOCK = BLOCKS.register("dark_violet_block", () -> new PaintBlock());
 	public static final RegistryObject<PaintBlock> DEEP_PINK_BLOCK = BLOCKS.register("deep_pink_block", () -> new PaintBlock());

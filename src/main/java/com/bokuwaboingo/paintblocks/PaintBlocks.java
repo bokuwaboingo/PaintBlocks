@@ -34,7 +34,7 @@ public class PaintBlocks
 		@Override
 		public ItemStack createIcon()
 		{
-			return ItemInit.WHITE_BLOCK.get().getDefaultInstance();
+			return ItemInit.RAINBOW_BLOCK.get().getDefaultInstance();
 		}
     }
 }
