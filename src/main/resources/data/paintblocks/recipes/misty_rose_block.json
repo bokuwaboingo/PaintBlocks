@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:misty_rose_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:misty_rose_block"
+	}
+}

@@ -3,7 +3,7 @@ loaderVersion="[35,)"
 license="All rights reserved"
 [[mods]]
 modId="paintblocks"
-version="1.0.0"
+version="1.1.0"
 displayName="Paint Blocks"
 logoFile="paintblocks.png"
 credits="Credit to TurtyWurty for the tutorials"

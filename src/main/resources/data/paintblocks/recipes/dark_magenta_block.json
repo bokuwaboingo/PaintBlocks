@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:dark_magenta_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:dark_magenta_block"
+	}
+}

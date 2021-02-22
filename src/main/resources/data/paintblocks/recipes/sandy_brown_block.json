@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:sandy_brown_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:sandy_brown_block"
+	}
+}

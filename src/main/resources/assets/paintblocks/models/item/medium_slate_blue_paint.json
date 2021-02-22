@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "paintblocks:blocks/medium_slate_blue_block"
+	}
+}

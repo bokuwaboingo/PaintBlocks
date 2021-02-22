@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:navajo_white_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:navajo_white_block"
+	}
+}

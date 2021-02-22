@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:olive_drab_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:olive_drab_block"
+	}
+}

@@ -13,6 +13,7 @@ public class PaintBlocks
 {
 	public static final String MOD_ID = "paintblocks";
 	public static final PaintBlocksItemGroup PB_GROUP = new PaintBlocksItemGroup();
+	public static final PaintItemGroup P_GROUP = new PaintItemGroup();
 	
     public PaintBlocks()
     {
@@ -28,13 +29,27 @@ public class PaintBlocks
     {
 		public PaintBlocksItemGroup()
 		{
-			super(MOD_ID);
+			super("paint_blocks");
 		}
 
 		@Override
 		public ItemStack createIcon()
 		{
 			return ItemInit.RAINBOW_BLOCK.get().getDefaultInstance();
+		}
+    }
+    
+    public static class PaintItemGroup extends ItemGroup
+    {
+		public PaintItemGroup()
+		{
+			super("paint");
+		}
+
+		@Override
+		public ItemStack createIcon()
+		{
+			return ItemInit.RAINBOW_PAINT.get().getDefaultInstance();
 		}
     }
 }

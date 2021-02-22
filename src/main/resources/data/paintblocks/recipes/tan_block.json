@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:tan_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:tan_block"
+	}
+}

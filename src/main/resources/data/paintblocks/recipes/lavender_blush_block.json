@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:lavender_blush_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:lavender_blush_block"
+	}
+}

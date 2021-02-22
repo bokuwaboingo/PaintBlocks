@@ -9,6 +9,6 @@ public class PaintBlockItem extends BlockItem
 {
 	public PaintBlockItem(PaintBlock blockIn)
 	{
-		super(blockIn, new Item.Properties().group(PaintBlocks.PB_GROUP));
+		super(blockIn, new Properties().group(PaintBlocks.PB_GROUP));
 	}	
 }

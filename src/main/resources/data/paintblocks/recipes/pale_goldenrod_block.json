@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:pale_goldenrod_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:pale_goldenrod_block"
+	}
+}

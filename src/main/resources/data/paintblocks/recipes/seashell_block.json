@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:seashell_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:seashell_block"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:salmon_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:salmon_block"
+	}
+}

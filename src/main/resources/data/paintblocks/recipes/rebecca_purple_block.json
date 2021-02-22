@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:rebecca_purple_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:rebecca_purple_block"
+	}
+}

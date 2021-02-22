@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:papaya_whip_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:papaya_whip_block"
+	}
+}

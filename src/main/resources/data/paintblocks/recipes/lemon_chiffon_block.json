@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:lemon_chiffon_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:lemon_chiffon_block"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:deep_sky_blue_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:deep_sky_blue_block"
+	}
+}

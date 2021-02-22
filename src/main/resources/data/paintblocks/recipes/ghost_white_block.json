@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:ghost_white_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:ghost_white_block"
+	}
+}

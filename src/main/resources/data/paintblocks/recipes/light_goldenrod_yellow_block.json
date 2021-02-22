@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:white_concrete"
+		},
+		{
+			"item": "paintblocks:light_goldenrod_yellow_paint"
+		}
+	],
+	"result": {
+		"item": "paintblocks:light_goldenrod_yellow_block"
+	}
+}

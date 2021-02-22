@@ -9,6 +9,6 @@ public class RainbowBlockItem extends BlockItem
 {
 	public RainbowBlockItem(RainbowBlock blockIn)
 	{
-		super(blockIn, new Item.Properties().group(PaintBlocks.PB_GROUP));
+		super(blockIn, new Properties().group(PaintBlocks.PB_GROUP));
 	}
 }
