@@ -18,7 +18,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("paintblocks")
-@SuppressErrors("addDimensionalSpacing")
 public class PaintBlocks
 {
 	public static final String MOD_ID = "paintblocks";
