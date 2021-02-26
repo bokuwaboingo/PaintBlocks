@@ -1,16 +1,24 @@
 package com.bokuwaboingo.paintblocks;
 
+import java.util.*;
+
 import com.bokuwaboingo.paintblocks.init.*;
 
 import net.minecraft.item.*;
+import net.minecraft.world.World;
+import net.minecraft.world.gen.FlatChunkGenerator;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
+import net.minecraft.world.gen.feature.structure.Structure;
+import net.minecraft.world.gen.settings.*;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.event.world.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("paintblocks")
+@SuppressErrors("addDimensionalSpacing")
 public class PaintBlocks
 {
 	public static final String MOD_ID = "paintblocks";
@@ -25,12 +33,27 @@ public class PaintBlocks
         StructureInit.STRUCTURES.register(bus);
 
         MinecraftForge.EVENT_BUS.addListener(this::generatePaintStorage);
+        MinecraftForge.EVENT_BUS.addListener(this::addDimensionalSpacing);
     }
     
     public void generatePaintStorage(final BiomeLoadingEvent event)
 	{
-		event.getGeneration().getStructures().add(() -> StructureInit.PAINT_STORAGE.get().withConfiguration(NoFeatureConfig.field_236559_b_));
+    	event.getGeneration().getStructures().add(() -> StructureInit.PAINT_STORAGE.get().withConfiguration(NoFeatureConfig.field_236559_b_));
 	}
+    
+    public void addDimensionalSpacing(final WorldEvent.Load event)
+    {
+        if (event.getWorld() instanceof ServerWorld)
+        {
+            ServerWorld serverWorld = (ServerWorld)event.getWorld();
+
+            if (serverWorld.getChunkProvider().getChunkGenerator() instanceof FlatChunkGenerator && !serverWorld.getDimensionKey().equals(World.OVERWORLD)) return;
+
+            Map<Structure<?>, StructureSeparationSettings> tempMap = new HashMap<>(serverWorld.getChunkProvider().generator.func_235957_b_().func_236195_a_());
+            tempMap.put(StructureInit.PAINT_STORAGE.get(), DimensionStructuresSettings.field_236191_b_.get(StructureInit.PAINT_STORAGE.get()));
+            serverWorld.getChunkProvider().generator.func_235957_b_().field_236193_d_ = tempMap;
+        }
+   }
     
     public static class PaintBlocksItemGroup extends ItemGroup
     {
