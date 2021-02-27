@@ -6,6 +6,7 @@ import com.bokuwaboingo.paintblocks.init.*;
 
 import net.minecraft.item.*;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.FlatChunkGenerator;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraft.world.gen.feature.structure.Structure;
@@ -37,16 +38,17 @@ public class PaintBlocks
     
     public void generatePaintStorage(final BiomeLoadingEvent event)
 	{
-    	event.getGeneration().getStructures().add(() -> StructureInit.PAINT_STORAGE.get().withConfiguration(NoFeatureConfig.field_236559_b_));
+    	if (event.getCategory() == Biome.Category.PLAINS) event.getGeneration().getStructures().add(() -> StructureInit.PAINT_STORAGE.get().withConfiguration(NoFeatureConfig.field_236559_b_));
 	}
     
-    public void addDimensionalSpacing(final WorldEvent.Load event)
+    @SuppressWarnings("resource")
+	public void addDimensionalSpacing(final WorldEvent.Load event)
     {
         if (event.getWorld() instanceof ServerWorld)
         {
             ServerWorld serverWorld = (ServerWorld)event.getWorld();
 
-            if (serverWorld.getChunkProvider().getChunkGenerator() instanceof FlatChunkGenerator && !serverWorld.getDimensionKey().equals(World.OVERWORLD)) return;
+            if (serverWorld.getChunkProvider().getChunkGenerator() instanceof FlatChunkGenerator && serverWorld.getDimensionKey().equals(World.OVERWORLD)) return;
 
             Map<Structure<?>, StructureSeparationSettings> tempMap = new HashMap<>(serverWorld.getChunkProvider().generator.func_235957_b_().func_236195_a_());
             tempMap.put(StructureInit.PAINT_STORAGE.get(), DimensionStructuresSettings.field_236191_b_.get(StructureInit.PAINT_STORAGE.get()));
