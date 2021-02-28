@@ -26,12 +26,12 @@ public class StructureInit
 	
 	public static void registerStructurePieces()
 	{
-		Registry.register(Registry.STRUCTURE_PIECE, "paint_storage", PAINT_STORAGE_PIECE);
+		Registry.register(Registry.STRUCTURE_PIECE, new ResourceLocation(PaintBlocks.MOD_ID, "paint_storage"), PAINT_STORAGE_PIECE);
 	}
 	
 	public static void registerPaintStorage()
 	{
-		Structure.NAME_STRUCTURE_BIMAP.put(PAINT_STORAGE.get().getRegistryName().toString(), PAINT_STORAGE.get());
+		Structure.NAME_STRUCTURE_BIMAP.put("paintblocks:paint_storage", PAINT_STORAGE.get());
 
         Structure.field_236384_t_ = ImmutableList.<Structure<?>>builder()
                                     .addAll(Structure.field_236384_t_)
