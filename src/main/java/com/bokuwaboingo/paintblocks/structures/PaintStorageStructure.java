@@ -1,7 +1,5 @@
 package com.bokuwaboingo.paintblocks.structures;
 
-import org.apache.logging.log4j.LogManager;
-
 import com.bokuwaboingo.paintblocks.PaintBlocks;
 import com.mojang.serialization.Codec;
 
@@ -52,14 +50,12 @@ public class PaintStorageStructure extends Structure<NoFeatureConfig>
 			
 			int x = (chunkX << 4) + 7;
 			int z = (chunkZ << 4) + 7;
-			int y = generator.getHeight(x, z, Heightmap.Type.WORLD_SURFACE_WG);
+			int y = generator.getHeight(x, z, Heightmap.Type.WORLD_SURFACE_WG) - 1;
 			BlockPos pos = new BlockPos(x, y, z);
 			
 			PaintStoragePieces.start(templateManager, pos, rotation, this.components, this.rand);
 			
 			this.recalculateStructureSize();
-			
-			LogManager.getLogger().info("Found a thing at " + pos.toString());
 		}
 	}
 }
