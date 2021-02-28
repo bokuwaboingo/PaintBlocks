@@ -28,11 +28,12 @@ public class PaintBlocks
     public PaintBlocks()
     {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        bus.addGenericListener(Structure.class, this::onRegisterStructures);
         
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         StructureInit.STRUCTURES.register(bus);
+        
+        bus.addGenericListener(Structure.class, this::onRegisterStructures);
 
         MinecraftForge.EVENT_BUS.addListener(this::biomeModification);
         MinecraftForge.EVENT_BUS.addListener(this::addDimensionalSpacing);
