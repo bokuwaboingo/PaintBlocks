@@ -13,6 +13,7 @@ import net.minecraft.world.gen.feature.structure.Structure;
 import net.minecraft.world.gen.settings.*;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.world.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -27,16 +28,22 @@ public class PaintBlocks
     public PaintBlocks()
     {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        bus.addGenericListener(Structure.class, this::onRegisterStructures);
         
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         StructureInit.STRUCTURES.register(bus);
 
-        MinecraftForge.EVENT_BUS.addListener(this::generatePaintStorage);
+        MinecraftForge.EVENT_BUS.addListener(this::biomeModification);
         MinecraftForge.EVENT_BUS.addListener(this::addDimensionalSpacing);
     }
     
-    public void generatePaintStorage(final BiomeLoadingEvent event)
+    public void onRegisterStructures(final RegistryEvent.Register<Structure<?>> event) {
+        StructureInit.registerPaintStorage();
+        StructureInit.registerConfiguration();
+    }
+    
+    public void biomeModification(final BiomeLoadingEvent event)
 	{
     	if (event.getCategory() == Biome.Category.PLAINS) event.getGeneration().getStructures().add(() -> StructureInit.PAINT_STORAGE.get().withConfiguration(NoFeatureConfig.field_236559_b_));
 	}

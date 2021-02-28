@@ -59,7 +59,7 @@ public class PaintStorageStructure extends Structure<NoFeatureConfig>
 			
 			this.recalculateStructureSize();
 			
-			LogManager.getLogger().info("Found a thing at " + pos);
+			LogManager.getLogger().info("Found a thing at " + pos.toString());
 		}
 	}
 }
