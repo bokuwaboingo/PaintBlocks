@@ -7,7 +7,7 @@ Paint Blocks are solid color blocks based on the 139 CSS colors! [See here](http
 
 This also includes a Rainbow Block, and a structure to obtain 64 of each block!
 
-[Download here](https://www.curseforge.com/minecraft/mc-mods/paint-blocks/files)
+[Download here](https://www.curseforge.com/minecraft/mc-mods/paint-blocks/files) or [here](https://github.com/bokuwaboingo/PaintBlocks/releases)
 
 # License
 Based on the [ISC License](./LICENSE)
