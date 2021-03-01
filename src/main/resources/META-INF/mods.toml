@@ -3,7 +3,7 @@ loaderVersion="[35,)"
 license="ISC License"
 [[mods]]
 modId="paintblocks"
-version="1.2.1"
+version="1.2.2"
 displayName="Paint Blocks"
 logoFile="paintblocks.png"
 credits="Credit to TurtyWurty and TelepathicGrunt for the tutorials"
